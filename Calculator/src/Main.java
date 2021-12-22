@@ -1,12 +1,12 @@
 import java.io.FileNotFoundException;
 
-import calculator.Calculator;
+import Design.Design;
 
 public class Main {
 	public static void main(String[] args) {
-		Calculator window1 = null;
+		Design window1 = null;
 		try {
-			window1 = new Calculator();
+			window1 = new Design();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

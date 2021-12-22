@@ -1,4 +1,4 @@
-package calculator;
+package Design;
 
 import java.awt.Color;
 import java.awt.FontMetrics;

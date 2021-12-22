@@ -1,13 +1,13 @@
 package out;
 
 public class WriteFile {
-	private static String file = "";
+	private String file = "";
 
-	public static String getFile() {
+	public String getFile() {
 		return file;
 	}
 
-	public static void setFile(String file) {
-		WriteFile.file = file;
+	public void setFile(String file) {
+		this.file = file;
 	}
 }

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class PrintFile {
-	private static String path = "C:\\Users\\user\\Calculator\\out.txt";
+	private static String path = "./out.txt";
 	private PrintWriter pw = null;
 	WriteFile wf = new WriteFile();
 
@@ -22,8 +22,16 @@ public class PrintFile {
 	}
 
 	public void writeFile() {
-		pw.println(WriteFile.getFile());
-		System.out.println(WriteFile.getFile());
+		pw.println(wf.getFile());
+		System.out.println(wf.getFile());
+	}
+	
+	public String getwriteFile() {
+		return wf.getFile();
+	}
+
+	public void setwriteFile(String file) {
+		wf.setFile(file);
 	}
 
 	public PrintFile() {
