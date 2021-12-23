@@ -90,7 +90,6 @@ public class Design extends JFrame implements ActionListener {
 		gbc_button_percent.gridx = 5;
 		gbc_button_percent.gridy = 3;
 		getContentPane().add(button_percent, gbc_button_percent);
-		button_percent.addActionListener(this);
 
 		// 루트
 		RoundedButton button_root = new RoundedButton("\u221Ax");
@@ -127,7 +126,6 @@ public class Design extends JFrame implements ActionListener {
 		gbc_button_factorial.gridx = 2;
 		gbc_button_factorial.gridy = 4;
 		getContentPane().add(button_factorial, gbc_button_factorial);
-		button_factorial.addActionListener(this);
 
 		// 분수
 		RoundedButton button_fractions = new RoundedButton("1/x");
@@ -188,8 +186,7 @@ public class Design extends JFrame implements ActionListener {
 		gbc_button_sin.gridx = 2;
 		gbc_button_sin.gridy = 5;
 		getContentPane().add(button_sin, gbc_button_sin);
-		button_sin.addActionListener(this);
-		
+
 		// 코사인
 		RoundedButton button_cos = new RoundedButton("cos");
 		button_cos.setFont(new Font("Dialog", Font.BOLD, 12));
@@ -201,7 +198,6 @@ public class Design extends JFrame implements ActionListener {
 		gbc_button_cos.gridx = 2;
 		gbc_button_cos.gridy = 6;
 		getContentPane().add(button_cos, gbc_button_cos);
-		button_cos.addActionListener(this);
 
 		// 탄젠트
 		RoundedButton button_tan = new RoundedButton("tan");
@@ -214,7 +210,6 @@ public class Design extends JFrame implements ActionListener {
 		gbc_button_tan.gridx = 2;
 		gbc_button_tan.gridy = 7;
 		getContentPane().add(button_tan, gbc_button_tan);
-		button_tan.addActionListener(this);
 
 		// 더하기
 		RoundedButton button_add = new RoundedButton("+");
@@ -402,11 +397,16 @@ public class Design extends JFrame implements ActionListener {
 		button_reset.addActionListener(this);
 		button_percent.addActionListener(this);
 		button_root.addActionListener(this);
+		button_factorial.addActionListener(this);
 		button_pie.addActionListener(this);
 		button_fractions.addActionListener(this);
 		buttton_log.addActionListener(this);
 		button_pow.addActionListener(this);
 		button_abs.addActionListener(this);
+		button_percent.addActionListener(this);
+		button_sin.addActionListener(this);
+		button_cos.addActionListener(this);
+		button_tan.addActionListener(this);
 		button_delete.addActionListener(this);
 		button_add.addActionListener(this);
 		button_subtract.addActionListener(this);
